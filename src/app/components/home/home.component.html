@@ -1,0 +1,308 @@
+ 
+ <nav class="navbar navbar-expand-lg  bg-pink text-light">
+    <div class="container-fluid">
+        <img src="assets/images/logo_blancoRosado.svg" width="100px">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<div class="main" data-scroll-container>
+      
+        <div class="row intro bg-yellow">
+          <div class="col-10 offset-1 col-md-8 offset-md-2">
+                <img src="assets/images/intro2.svg" width="100%" data-scroll data-scroll-speed="3">
+                <p data-scroll data-scroll-speed="1" data-scroll-offset="-100px" >En School of code sabemos que al entregarle las primeras herramientas de programación a un niño les abrimos las puertas a un mundo de oportunidades. 
+                    Más allá de obtener un oficio, buscamos <span style="font-weigth:700"> que desarrollen la capacidad de seguir aprendiendo por su cuenta.</span>
+                    Una vez completado uno de nuestros cursos. Entran a una comunidad global de programadores donde la información está a su alcance, disponible y gratis.
+                </p>
+            </div>
+        
+        </div>
+
+    <div class="row meta" >
+        <div class="col-12">
+            <h1  data-scroll data-scroll-speed="3" >EL MUNDO DEL MAÑANA <br> Y EL METAVERSO  <br> LOS NECESITAN</h1>
+        </div>
+    </div> 
+
+    <div class="row pc">
+        <div class="col-12 col-md-4 fotopc">
+            <img src="assets/images/computer.png" width="200px"  data-scroll data-scroll-speed="3" >
+        </div>
+        <div class="col-12 col-md-6 textopc">
+            <p>Cuando empiezas a programar no solo aprendes a crear apps o juegos con un lenguaje de programación sí no que desbloqueas una capacidad en ti que puede llevarte a cualquier lugar. Y si hablamos de meta verso esta frase se vuelve literal.</p>
+            <p><span> Cada año se necesitan más programadores o sencillamente los puestos de trabajo necesitan que las personas tengan conocimientos de programación. </span></p>
+        </div>
+    </div>    
+    
+    <div class="row gif">
+        <div class="col-12 col-lg-8">
+            <img src="assets/images/Farewell.gif" width="100%"  data-scroll data-scroll-speed="2">
+        </div>
+        <div class="col-12 col-lg-4 textoGif">
+            <p><span>School of code apunta a niños y jóvenes en riesgo social. </span></p>
+            <p>Creemos que al enseñarles a programar no solo entregamos herramientas laborales prácticas si no que también desarrollamos una forma de pensar.</p>
+            <p>Desarrollamos sus capacidades tanto lógicas como creativas. Pero por sobre todo el mayor objetivo de cada curso es promover el concepto de ser autodidactas. Hoy la información de calidad y gratuita abunda en internet. </p>
+            <p>Solo falta aprender a consumirla.</p>
+            <p>Por estos puntos creemos que podemos mejorar considerablemente sus expectativas laborales y brindarles una reinserción social exitosa.</p>
+        </div>
+    </div>    
+
+
+
+<div class="row como">
+    <div class="col-12">
+        <img src="assets/images/como.svg" class="imgComo">
+    </div>
+</div>
+
+<div class="row casa">
+
+    <div class="col-12 col-md-6 casaTexto papel">
+        <h1>PROYECTO <br> CASA CRECEMOS </h1>
+        <p>Haremos nuestro primer taller de programación dentro de la casa club de crecemos.org</p>
+        <p>Ahi esperamos impartir dos cursos de 10 niños cada uno. Para esto quisieramos equipar una pieza de computación para que además quede disponible el uso diario y apoyo para la vida escolar de los niños. </p>
+        <p>Cualquier aporte es bienvenido para llegar a la meta de $x.xxx.xxx</p>
+        <h5><img src="assets/images/pizza.png" width="20px"> 10 computadores (procesador i5, y 4 mb de ram) </h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> 10 Monitores con mouse y teclado.</h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> 10 Sillas </h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> 10 Auriculares</h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> Set de parlantes</h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> Switch</h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> Televisor</h5>
+        <h5><img src="assets/images/pizza.png" width="20px"> Mesón principal</h5>
+    </div>
+
+    <div class="col-12 col-md-6">
+        
+        <div class="row ">
+            <div class="col-12 d-none d-lg-block">
+                <img src="assets/images/rubik.png" width="300px"  class="rubik"  data-scroll data-scroll-speed="5">
+                <img src="assets/images/alien.png" width="150px"  class="alien"  data-scroll data-scroll-speed="4" data-scroll-offset="-100px">
+            </div>
+        </div>
+     
+        <div class="row metameta">
+            <div class="col-12">
+                <h1 class="metaTitulo">Meta <span>{{porcentaje}}%</span></h1>
+            </div>
+
+            <div class="col-10">
+                <img *ngIf="porcentaje < 8" src="assets/images/meta0.png" class="metaPlata"> 
+                <img *ngIf="porcentaje >= 8 && porcentaje < 17 " src="assets/images/meta8.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 17 && porcentaje < 25 " src="assets/images/meta17.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 25 && porcentaje < 33 " src="assets/images/meta25.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 33 && porcentaje < 42 " src="assets/images/meta33.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 42 && porcentaje < 50 " src="assets/images/meta42.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 50 && porcentaje < 58 " src="assets/images/meta50.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 58 && porcentaje < 67 " src="assets/images/meta58.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 67 && porcentaje < 75 " src="assets/images/meta67.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 75 && porcentaje < 83 " src="assets/images/meta75.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 83 && porcentaje < 92 " src="assets/images/meta83.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 92 && porcentaje < 100 " src="assets/images/meta92.png" class="metaPlata">
+                <img *ngIf="porcentaje >= 100" src="assets/images/meta100.png" class="metaPlata">
+            </div>
+            <div class="col-2">
+      
+            </div>
+         </div>   
+   
+    </div>
+
+
+
+    <div class="row donaciones bg-pink" id="donaciones">
+        
+        <div class="col-12 donacionestitulo">
+            <h1 data-scroll data-scroll-speed="3">Donar <img src="assets/images/okay.png" class="manito"> Aqui</h1>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" (click)="donar(5000)">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 fotito">
+                    <img src="assets/images/moneda.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">BIT</h5>
+                      <p class="card-text">$5.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" (click)="donar(10000)">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 fotito">
+                    <img src="assets/images/moneda2.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">BYTE</h5>
+                      <p class="card-text">$10.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" (click)="donar(50000)">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 fotito">
+                    <img src="assets/images/moneda3.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">KILO <br> BYTE</h5>
+                      <p class="card-text">$50.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" (click)="donar(100000)">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 fotito">
+                    <img src="assets/images/fajo1.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">MEGA <br> BYTE</h5>
+                      <p class="card-text">$100.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" (click)="donar(300000)">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 fotito">
+                    <img src="assets/images/fajo2.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">GIGA <br> BYTE</h5>
+                      <p class="card-text">$300.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+   
+        <div class="col-6 col-md-4 col-lg-3" (click)="donar(300000)">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 fotito">
+                    <img src="assets/images/fajo3.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">TERA <br> BYTE</h5>
+                      <p class="card-text">$500.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+   
+   
+        <div class="col-12 col-md-12 col-lg-6" (click)="donar(1000000)">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-5 fotito2">
+                    <img src="assets/images/star.png" class="img-fluid rounded-start" alt="..." width=100px>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body estrella">
+                      <h5 class="card-title ">PETA <br> BYTE</h5>
+                      <p class="card-text">$1.000.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+   
+        
+
+    </div>
+
+
+    <div *ngIf="patreons.length > 0 "class="row patreons">
+        <div class="col-12">
+            <h1>Donadores</h1>
+            <h2 *ngFor="let a of patreons">{{a.nombre}}</h2>
+        </div>
+    </div>
+
+
+
+
+    <div class="row footer">
+        <div class="col-12">
+            <img src="assets/images/schoollogo.png" width="200px" data-scroll data-scroll-speed="2" class="logoSchool">
+            <p>
+                <a href="http://www.gour-net.cl"><img src="assets/images/gournet-01.svg" data-scroll data-scroll-speed="2" width="200px"></a>
+            </p>
+        </div>
+
+    </div>
+
+
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- FIN MAIN -->
+    
+    
+<!-- 
+    
+    <div class="header">
+      <div class="header__left">
+        <h1 data-scroll data-scroll-speed="3">Our Services</h1>
+      </div>
+      <div class="header__right">
+        <h1 data-scroll data-scroll-speed="-3.75" data-scroll-offset="-100%">what we do</h1>
+      </div>
+    </div>
+  </div> 
+  -->

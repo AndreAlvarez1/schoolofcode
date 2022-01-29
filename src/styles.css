@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap');
+@import '~locomotive-scroll/dist/locomotive-scroll.css';
+
+
+@font-face {
+    font-family: "upheavtt";
+    src: local("upheavtt"), url(./assets/fonts/upheavtt.ttf) format("truetype");
+}
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    font-family: 'upheavtt';
+}
+
+p{ 
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.bg-pink{
+    background-color: #EB2376;
+}
+.bg-yellow{
+    background-color: #EEEC3F;
+}
+
+.nav-link{
+    color:white;
+}
+
+.nav-link:hover{
+    color:yellow;
+}
+
+.flyer{
+    z-index: 100;
+}

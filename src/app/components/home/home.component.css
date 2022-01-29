@@ -1,0 +1,378 @@
+.main {
+    min-height: 650vh;
+  }
+  
+  .row{
+      margin:0;
+  }
+  .header {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5em;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  .intro{
+    padding: 35% 20px;
+  }
+
+
+  .intro p{
+    
+      font-size: 1em;
+      text-align: justify;
+  }
+
+  .intro span{
+      font-weight: 700;
+  }
+
+  .pizza {
+      margin-left:-500px;
+  }
+
+  .meta{
+      padding:30% 0 0 20px;
+      background-image: url("src/assets/images/metaverse.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80vh;
+  }
+
+
+  .meta h1{
+    font-size: 3em;
+    color: white;
+    box-shadow: inset 0px 0px 0px 1000px #eb2376;
+    display: initial;
+    line-height: 0.8em;
+  }
+
+  .pc{
+      background-color: #BFB8B4;
+      padding-bottom:100px;
+
+  }
+
+  .casa{
+      background-image: url("src/assets/images/papel1.png");
+      background-repeat: repeat;
+      height: auto;
+  }
+
+ 
+  .pc p, .gif p, .casaTexto p{
+      font-size:1em;
+  }
+
+  .pc span, .gif span{
+      font-weight:700;
+  }
+
+  .fotopc{
+      text-align: center;
+      padding-top:90px;
+  }
+
+  .gif{
+        padding:100px 20px;
+      background-color: #B5D0EA;
+  }
+
+  .imgComo{
+      width: 66%;
+  }
+
+  .como {
+      padding:100px 0;
+      background-color: black;
+  }
+
+  .rubik{
+      float:right;
+      margin-right: 200px;
+      padding-top:50px;
+  }
+
+  .alien{
+      float:right;
+      margin-right: 100px;
+      rotate: 45deg;
+  }
+
+  .casaTexto{
+      padding:100px 40px 20px;
+  }
+
+  .casaTexto h1{
+    line-height: 0.6em;
+    font-size: 4em;
+  }
+
+
+.metameta{
+    padding-bottom:80px;
+}
+
+.casaTexto h5{
+    font-size:0.8em;
+}
+
+.metaTitulo {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.metaTitulo span{
+    font-size: 1em;
+    color: #5D79B6;
+    font-family: 'upheavtt';
+}
+
+.metaPlata{
+      width:300px;
+      margin-top:-20px;
+  }
+  .porce{
+      text-align: center;;
+  }
+
+
+.donaciones{
+    padding:20px;
+}
+
+
+.manito{
+    width:80px;
+}
+
+
+.donacionestitulo{
+    text-align: center;
+}  
+
+.donacionestitulo h1{
+    padding:50px 0;
+    font-size: 2em;
+    color:white;
+    margin:0;
+}  
+
+.card {
+cursor: pointer;
+}
+
+
+.card-body{
+    min-height: 125px;
+}
+
+.card .fotito{
+    padding:20px;
+    text-align: center;
+}
+
+.card .fotito2{
+    padding:20px;
+    text-align: center;
+}
+
+.estrella{
+    text-align: center;
+}
+
+.card-title{
+    font-family: 'upheavtt';
+    font-size: 2.5em;
+    line-height: 0.6em;
+
+}
+
+.card-text{
+    font-size: 1.5em;
+    margin-top: -10px;
+
+}
+
+
+
+.patreons{
+    text-align: center;
+    background-image: url("src/assets/images/arcade.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px 20px;
+    color:white;
+}
+
+.patreons h1{
+    font-size: 3em;
+}
+
+.patreons h2{
+    font-size: 1.5em
+}
+
+
+.footer{
+    text-align: center;
+    padding:80px 20px;
+    background-color: #C2E7F1;
+}
+
+
+
+.gournet{
+    width:200px;
+}
+
+
+
+@media (min-width: 768px)  {  
+    .main {
+        min-height: 550vh;
+      }
+      .textopc{
+        padding-top:80px;
+    }
+    .textoGif{
+        padding-top:40px;
+    }
+
+    .metameta{
+        padding:80% 0;
+    }
+
+    .donacionestitulo h1{
+        font-size: 6em;
+  
+    }  
+    .card .fotito2{
+        text-align: right;
+    }
+
+    .card-title, .card-text{
+        text-align: left;
+    }
+    
+    .estrella{
+        text-align: right;
+    }
+    
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+    .main{
+        min-height: 630vh;
+    }
+    
+
+    .intro{
+        padding: 15% 20px;
+      }
+
+      .intro p{
+        margin-top:-50px;
+        font-size: 1.4em;
+    }
+
+    .meta{
+        padding:20% 0 0 100px;
+        height: 80vh;
+    }
+
+    .meta h1{
+        font-size: 4em;
+
+      }
+
+  .pc{
+    padding-top:150px;
+   }
+
+   .fotopc{
+     padding-top:150px;
+   }
+
+
+   .pc p, .gif p, .casaTexto p{
+    font-size:1.3em;
+    }
+
+
+
+.donacionestitulo h1{
+    padding-top:300px;
+    font-size: 8em;
+    color:white;
+    margin:0;
+}  
+
+.imgComo{
+    width: 33%;
+}
+   
+.casaTexto{
+    padding:100px 40px;
+}
+
+.metaTitulo {
+    font-size: 5em;
+}
+
+.metameta{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.casaTexto h5{
+    font-size:1.1em;
+}
+
+.card-title{
+    font-size: 3em;
+}
+
+
+.patreons h1{
+    font-size: 4em;
+}
+
+.patreons h2{
+    font-size: 2em
+}
+
+.footer{
+    text-align: center;
+    padding:100px 20px;
+    background-color: #C2E7F1;
+}
+
+.logoSchool{
+   padding-top:50px
+}
+
+
+
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ .main {
+     height: 650vh;
+ }
+
+.donacionestitulo h1{
+    padding-top:200px;
+ 
+}  
+
+
+}
