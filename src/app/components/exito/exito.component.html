@@ -1,0 +1,17 @@
+<div class="row bg-pink exito animate__animated animate__fadeIn" style="padding:50px 20px">
+    <div class="col-12">
+        <h2 style="text-align: center;margin-bottom:0; font-weight: 700;">!!!!Oh yes!!! Donación realizada con éxito</h2>
+        <h1 style="text-align: center; font-size: 3em;">Muchas gracias!</h1>
+        <p style="text-align:center"><iframe  src="https://giphy.com/embed/nXxOjZrbnbRxS" width="356" height="480" frameBorder="0" class="giphy-embed" ></iframe></p>
+    </div>
+
+    
+    <div *ngIf="!loading"class="col-12 datos">
+        <p>Donación por ${{pago.amount | number}}</p>
+        <p>Código de autoizacion: {{pago.auth_code}}</p>
+        <button class="btn btn-outline-light" routerLink="home">Volver</button>
+    </div>
+</div>
+
+
+

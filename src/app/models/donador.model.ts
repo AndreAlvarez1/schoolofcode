@@ -1,15 +1,19 @@
 export class DonadorModel {
-    id:string;
-    nombre: string;
-    mail: string;
-    aporte: number;
-    proyecto: string;
+    id:number;
+    firstname: string;
+    lastname: string;
+    email: string;
+    cel: string;
+    status: number;
+    origen: string;
 
    constructor() {
-    this.nombre = '';
-    this.mail = '';
-    this.aporte = 0;
-    this.proyecto = '';
+    this.firstname  = '';
+    this.lastname   = '';
+    this.email      = '';
+    this.cel        = '';
+    this.status     = 1;
+    this.origen     = 'School of Code';
    }
 }
 

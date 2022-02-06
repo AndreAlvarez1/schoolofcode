@@ -27,13 +27,13 @@
 <div class="main" data-scroll-container>
       
         <div class="row intro bg-yellow">
-          <button class="btn btn-success" (click)="donar(10)">DONAR</button>
           <div class="col-10 offset-1 col-md-8 offset-md-2">
+                <h2 class="subtitulo text-primary">Cursos gratuitos y sin fines de lucro para niños en riesgo social</h2>
                 <img src="assets/images/intro2.svg" width="100%" data-scroll data-scroll-speed="3">
-                <p data-scroll data-scroll-speed="1" data-scroll-offset="-100px" >En School of code sabemos que al entregarle las primeras herramientas de programación a un niño les abrimos las puertas a un mundo de oportunidades. 
-                    Más allá de obtener un oficio, buscamos <span style="font-weigth:700"> que desarrollen la capacidad de seguir aprendiendo por su cuenta.</span>
-                    Una vez completado uno de nuestros cursos. Entran a una comunidad global de programadores donde la información está a su alcance, disponible y gratis.
-                </p>
+                <p data-scroll data-scroll-speed="1" data-scroll-offset="-100px" >En School of Code estamos convencidos de que, al entregar las primeras herramientas de programación a un niño, podemos abrirle las puertas a un mundo de oportunidades. <br>
+                  Más allá de que pueda obtener un oficio una vez completados nuestros cursos, <span style="font-weigth:700">queremos encender la chispa de la curiosidad y desarrollar la capacidad de seguir aprendiendo por su cuenta.</span>
+                  Una vez completado uno de nuestros cursos. Entran a una comunidad global de programadores donde la información está a su alcance, disponible y gratis.
+                 </p>
             </div>
         
         </div>
@@ -49,7 +49,7 @@
             <img src="assets/images/computer.png" width="200px"  data-scroll data-scroll-speed="3" >
         </div>
         <div class="col-12 col-md-6 textopc">
-            <p>Cuando empiezas a programar no solo aprendes a crear apps o juegos con un lenguaje de programación sí no que desbloqueas una capacidad en ti que puede llevarte a cualquier lugar. Y si hablamos de meta verso esta frase se vuelve literal.</p>
+            <p>Cuando empiezas a programar no solo aprendes a crear apps o juegos con un lenguaje de programación sí no que desbloqueas una capacidad en ti que puede llevarte a cualquier lugar. Y si hablamos de meta verso esta frase se vuelve realidad.</p>
             <p><span> Cada año se necesitan más programadores o sencillamente los puestos de trabajo necesitan que las personas tengan conocimientos de programación. </span></p>
         </div>
     </div>    
@@ -60,10 +60,14 @@
         </div>
         <div class="col-12 col-lg-4 textoGif">
             <p><span>School of code apunta a niños y jóvenes en riesgo social. </span></p>
-            <p>Creemos que al enseñarles a programar no solo entregamos herramientas laborales prácticas si no que también desarrollamos una forma de pensar.</p>
+            <p>Creemos que al enseñarles a programar, no sólo les entregaremos herramientas prácticas, sino que también desarrollaremos una forma de pensar que permitirá aumentar sus capacidades tanto lógicas como creativas. </p>
+            <p>Es por eso que todos nuestros cursos apuntan a promover el concepto de ser autodidactas. Hoy la información de calidad y gratuita abunda en internet, sólo falta aprender a buscarla.</p>
+            <p>Finalmente, nuestro objetivo es mejorar de forma considerable sus expectativas laborales, lo que aumentará sus posibilidades de una reinserción social exitosa.</p>
+
+            <!-- <p>Creemos que al enseñarles a programar no solo entregamos herramientas laborales prácticas si no que también desarrollamos una forma de pensar.</p>
             <p>Desarrollamos sus capacidades tanto lógicas como creativas. Pero por sobre todo el mayor objetivo de cada curso es promover el concepto de ser autodidactas. Hoy la información de calidad y gratuita abunda en internet. </p>
             <p>Solo falta aprender a consumirla.</p>
-            <p>Por estos puntos creemos que podemos mejorar considerablemente sus expectativas laborales y brindarles una reinserción social exitosa.</p>
+            <p>Por estos puntos creemos que podemos mejorar considerablemente sus expectativas laborales y brindarles una reinserción social exitosa.</p> -->
         </div>
     </div>    
 
@@ -79,9 +83,12 @@
 
     <div class="col-12 col-md-6 casaTexto papel">
         <h1>PROYECTO <br> CASA CRECEMOS </h1>
-        <p>Haremos nuestro primer taller de programación dentro de la casa club de crecemos.org</p>
-        <p>Ahi esperamos impartir dos cursos de 10 niños cada uno. Para esto quisieramos equipar una pieza de computación para que además quede disponible el uso diario y apoyo para la vida escolar de los niños. </p>
-        <p>Cualquier aporte es bienvenido para llegar a la meta de $x.xxx.xxx</p>
+        <p> Nuestro primer taller de programación será impartido dentro de la Casa Club de la organización Crecemos.org y consta de dos cursos de 10 niños cada uno.</p>
+        <p>Para esto, quisiéramos equipar una sala de computación que nos permita entregar una mejor educación y que además quede disponible para uso diario, apoyando a los niños en su vida escolar.</p> 
+        <h3 class="text-primary" style="font-size:1.1em"> ¡Pero no podemos hacerlo solos, necesitamos de ti y tu generosidad! </h3> 
+        <p>Cualquier aporte es bienvenido para que juntos, logremos llegar a la meta de $ {{meta | number}}</p>
+        
+      
         <h5><img src="assets/images/pizza.png" width="20px"> 10 computadores (procesador i5, y 4 mb de ram) </h5>
         <h5><img src="assets/images/pizza.png" width="20px"> 10 Monitores con mouse y teclado.</h5>
         <h5><img src="assets/images/pizza.png" width="20px"> 10 Sillas </h5>
@@ -103,7 +110,7 @@
      
         <div class="row metameta">
             <div class="col-12">
-                <h1 class="metaTitulo">Meta <span>{{porcentaje}}%</span></h1>
+                <h1 class="metaTitulo">Meta <span>{{porcentaje | number}}%</span></h1>
             </div>
 
             <div class="col-10">
@@ -136,7 +143,7 @@
             <h1 data-scroll data-scroll-speed="3">Donar <img src="assets/images/okay.png" class="manito"> Aqui</h1>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3" (click)="donar(5000)">
+        <div class="col-6 col-md-4 col-lg-3"  (click)="abrirDonacion('Bit', 5000)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -152,7 +159,7 @@
               </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3" (click)="donar(10000)">
+        <div class="col-6 col-md-4 col-lg-3"  (click)="abrirDonacion('Byte', 10000)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -168,7 +175,7 @@
               </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3" (click)="donar(50000)">
+        <div class="col-6 col-md-4 col-lg-3" (click)="abrirDonacion('KiloByte',50000)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -184,7 +191,7 @@
               </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3" (click)="donar(100000)">
+        <div class="col-6 col-md-4 col-lg-3" (click)="abrirDonacion('MegaByte',100000)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -200,7 +207,7 @@
               </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3" (click)="donar(300000)">
+        <div class="col-6 col-md-4 col-lg-3" (click)="abrirDonacion('GigaByte', 300000)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -216,7 +223,7 @@
               </div>
         </div>
    
-        <div class="col-6 col-md-4 col-lg-3" (click)="donar(300000)">
+        <div class="col-6 col-md-4 col-lg-3" (click)="abrirDonacion('TeraByte',500000)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -233,7 +240,7 @@
         </div>
    
    
-        <div class="col-12 col-md-12 col-lg-6" (click)="donar(1000000)">
+        <div class="col-12 col-md-12 col-lg-6" (click)="abrirDonacion('PetaByte', 1000000)">
             <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-md-5 fotito2">
@@ -257,7 +264,7 @@
     <div *ngIf="patreons.length > 0 "class="row patreons">
         <div class="col-12">
             <h1>Donadores</h1>
-            <h2 *ngFor="let a of patreons">{{a.nombre}}</h2>
+            <h2 *ngFor="let a of patreons">{{a.firstname}} {{a.lastname}}</h2>
         </div>
     </div>
 
@@ -295,15 +302,57 @@
 </div> <!-- FIN MAIN -->
     
     
-<!-- 
-    
-    <div class="header">
-      <div class="header__left">
-        <h1 data-scroll data-scroll-speed="3">Our Services</h1>
+<div *ngIf="modalDonador" class="row fondoModif2 " style="margin:0">
+    <div class="col-12 ">
+
+      <div class="row bg-white animate__animated animate__flipInX mt-2" style="padding:20px">
+       
+        <div class="col-12 text-center">
+          <h1>Datos Personales</h1>
+          <p>Necesitamos tus datos para agradecer tu ayuda o si prefieres puedes donar anonimamente</p>
+         
+          <form (ngSubmit)="crearUsuario(form)" #form="ngForm" class="row formulario validate-form ">
+            
+            
+            <div class="col-10 offset-1 col-md-5 offset-md-1 campo">
+                <label>Nombre</label>
+                <span *ngIf="form.submitted && form.controls['firstname'].errors" class="error">Debes ingresar un nombre</span>
+                <input class="form-control" type="text" name="firstname" required [(ngModel)]="donador.firstname" placeholder="Nombre">
+            </div>
+
+            <div class="col-10 offset-1 col-md-5  offset-md-0 campo" data-validate="lastname is required">
+              <label>Apellido</label>
+                <span *ngIf="form.submitted && form.controls['lastname'].errors" class="error">Debes ingresar tu apellido por favor</span>
+                <input class="form-control" type="text" name="lastname" required minlength="2" [(ngModel)]="donador.lastname" placeholder="Apellido">
+            </div>
+            
+            <div class="col-10 offset-1 col-md-5 offset-md-0 campo">
+              <label>Email</label>
+                <span *ngIf="form.submitted && form.controls['email'].errors" class="error">Debes ingresar un correo por favor</span>
+                <input class="form-control" type="email" name="email" required email [(ngModel)]="donador.email" placeholder="Email">
+            </div>
+
+            <div class="col-10 offset-1 col-md-5 offset-md-1 campo">
+                <label>Celular  <span style="font-size:0.8em">opcional</span></label>
+                <input class="form-control" type="text" name="cellphone" [(ngModel)]="donador.cel" placeholder="+569 1111 1111">
+            </div>
+            
+
+            
+
+            <div class="col-10 offset-1 col-md-6 offset-md-3 mt-2 ">
+                <button class="btn btn-outline-primary w-100 btn-block" style="margin-bottom:10px" type="submit">
+                Guardar
+            </button>
+            </div>
+
+        </form>
+
+        <button class="btn btn-info w-100" (click)="anonimo()">Donar como Anonimo</button>
+        
+        </div>
       </div>
-      <div class="header__right">
-        <h1 data-scroll data-scroll-speed="-3.75" data-scroll-offset="-100%">what we do</h1>
-      </div>
+
+
     </div>
-  </div> 
-  -->
+</div>

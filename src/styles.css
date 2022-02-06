@@ -28,6 +28,10 @@ p{
     background-color: #EEEC3F;
 }
 
+.bg-white{
+    background-color: white;
+}
+
 .nav-link{
     color:white;
 }
@@ -38,4 +42,14 @@ p{
 
 .flyer{
     z-index: 100;
+}
+
+.fondoModif2 {
+    background-color: rgba(0, 5, 46, 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 1040;
+    height: 100vh;
+    width: 100%;
+    /* align-items: center; */
 }

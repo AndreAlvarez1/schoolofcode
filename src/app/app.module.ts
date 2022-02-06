@@ -7,12 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { ExitoComponent } from './components/exito/exito.component';
+import { ErrorComponent } from './components/error/error.component';
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ExitoComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

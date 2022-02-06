@@ -1,0 +1,14 @@
+.exito{
+    min-height: 100vh;
+    color:white;
+    /* background-color: aquamarine; */
+}
+
+.datos{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin-bottom:0;
+}

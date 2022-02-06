@@ -17,6 +17,14 @@
     font-size: 3em;
   }
   
+
+  .subtitulo{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+  }
+
+
   .intro{
     padding: 35% 20px;
   }
@@ -232,6 +240,10 @@ cursor: pointer;
     width:200px;
 }
 
+.error{
+    color:red;
+    padding-left:10px;
+}
 
 
 @media (min-width: 768px)  {  
@@ -357,6 +369,10 @@ cursor: pointer;
 
 .logoSchool{
    padding-top:50px
+}
+
+.label{
+    padding-top:20px;
 }
 
 
