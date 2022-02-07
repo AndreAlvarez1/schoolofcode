@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
 })
 export class ConectorService {
 
-    public url = 'http://localhost:9092';
+    public url = 'http://localhost:9092'; //DEV
+    // public url = 'http://localhost:9092';
 
 
   constructor( private http:HttpClient,
