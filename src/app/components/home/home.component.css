@@ -382,7 +382,7 @@ cursor: pointer;
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
  .main {
-     height: 650vh;
+     height: 780vh;
  }
 
 .donacionestitulo h1{

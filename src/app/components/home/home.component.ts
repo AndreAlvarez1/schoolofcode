@@ -48,7 +48,7 @@ patreons               = []
 
 
   getTienda(){
-    this.conex.getDatos('/soc/general/stores/1') 
+    this.conex.getDatos('/soc/general/stores/2') 
               .subscribe( (resp:any) => { 
                 this.store = resp['datos'][0]
                 console.log('tienda', this.store);

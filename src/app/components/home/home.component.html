@@ -144,7 +144,7 @@
             <h1 data-scroll data-scroll-speed="3">Donar <img src="assets/images/okay.png" class="manito"> Aqui</h1>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3"  (click)="abrirDonacion('Bit', 5000)">
+        <div class="col-6 col-md-4 col-lg-3"  (click)="abrirDonacion('Bit', 50)">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4 fotito">
@@ -153,7 +153,7 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">BIT</h5>
-                      <p class="card-text">$5.000</p>
+                      <p class="card-text">$50</p>
                     </div>
                   </div>
                 </div>
@@ -306,7 +306,7 @@
 <div *ngIf="modalDonador" class="row fondoModif2 " style="margin:0">
     <div class="col-12 ">
 
-      <div class="row bg-white animate__animated animate__flipInX mt-2" style="padding:20px">
+      <div class="row bg-white animate__animated animate__flipInX mt-2" style="padding:50px">
        
         <div class="col-12 text-center">
           <h1>Datos Personales</h1>
@@ -327,13 +327,13 @@
                 <input class="form-control" type="text" name="lastname" required minlength="2" [(ngModel)]="donador.lastname" placeholder="Apellido">
             </div>
             
-            <div class="col-10 offset-1 col-md-5 offset-md-0 campo">
+            <div class="col-10 offset-1 col-md-5 offset-md-1 campo">
               <label>Email</label>
                 <span *ngIf="form.submitted && form.controls['email'].errors" class="error">Debes ingresar un correo por favor</span>
                 <input class="form-control" type="email" name="email" required email [(ngModel)]="donador.email" placeholder="Email">
             </div>
 
-            <div class="col-10 offset-1 col-md-5 offset-md-1 campo">
+            <div class="col-10 offset-1 col-md-5 offset-md-0 campo">
                 <label>Celular  <span style="font-size:0.8em">opcional</span></label>
                 <input class="form-control" type="text" name="cellphone" [(ngModel)]="donador.cel" placeholder="+569 1111 1111">
             </div>
@@ -342,14 +342,14 @@
             
 
             <div class="col-10 offset-1 col-md-6 offset-md-3 mt-2 ">
-                <button class="btn btn-outline-primary w-100 btn-block" style="margin-bottom:10px" type="submit">
+                <button class="btn btn-primary w-100 btn-block" style="margin-bottom:10px" type="submit">
                 Guardar
             </button>
             </div>
 
         </form>
 
-        <button class="btn btn-info w-100" (click)="anonimo()">Donar como Anonimo</button>
+        <button class="btn btn-info w-80" (click)="anonimo()">Donar como Anonimo</button>
         
         </div>
       </div>
