@@ -1,0 +1,26 @@
+.fondo {
+    background-color: #E4E6F6;
+    padding-top:40px;
+    min-height: 100vh;
+}
+
+.tabla {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.totales h1{
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.totales h2{
+    margin-bottom: 0;
+}
+
+.totales h3{
+font-size: 1em;}
+
+.totales span{
+    font-weight: 700;
+}

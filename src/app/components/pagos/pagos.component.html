@@ -1,0 +1,81 @@
+<div  *ngIf="!admin" class="row">
+    <div class="col-12">
+        <p>no eres admin</p>
+    </div>
+</div>
+
+<div  *ngIf="admin && loading" class="row">
+    <div class="col-12">
+        <p>Cargando</p>
+    </div>
+</div>
+
+
+
+
+<div *ngIf="admin && !loading" class="row" style="margin:0">
+    <div class="col-12 fondo">
+
+
+        <div class="row totales animate__animated animate__fadeIn  " style="margin:0 0 20px 0">
+            <h1>💰 Donaciones</h1>
+            <div class="col-12 col-md-6">
+                <h2> Donaciones Totales: <span class="animate__animated animate__flipInX">$ {{totales.TotalPreComisiones | number}} | {{donaciones.length}} </span> </h2>
+                <h5>Total post comisiones: <span>$ {{totales.TotalPostComisiones | number}} </span></h5>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <select class="form-control" (change)="filtrarDonaciones($any($event.target).value)">
+                      <option *ngFor="let e of estados" [value]="e.status" >{{e.tipo}} </option>
+                    </select>
+                </div>
+            </div>
+           
+        </div>
+       
+        <div class="row" >
+            <div class="col-12">
+                <table *ngIf="donaciones.length > 0 "class="table table-striped tabla">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Donador</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Aporte</th>
+                        <th scope="col">Medio de Pago</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let d of donaciones; index as i" (click)="verPago(d)" class=" animate__animated animate__flipInX">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{d.firstname | titlecase}} {{d.lastname | titlecase}} </td>
+                        <td>{{d.detalle[0].item}} </td>
+                        <td>{{d.amount}} </td>
+                        <td>{{d.payment_type}} </td>
+                        <td>{{d.created_at | date: 'dd-MM-yyyy'}}  {{d.created_at | date: 'HH:mm'}} </td>
+                        <td *ngIf="d.status == 2">✅</td>
+                        <td *ngIf="d.status != 2">❌ </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+
+                  <p *ngIf="donaciones.length < 1">No hay donaciones en ese estado</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <button class="btn btn-primary w-100" routerLink="/home">Volver</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

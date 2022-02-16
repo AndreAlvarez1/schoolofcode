@@ -73,6 +73,9 @@ patreons               = []
   getDonaciones(){
     this.conex.getDatos('/soc/donaciones/1') 
               .subscribe( (resp:any) => { 
+
+                console.log('donaciones', resp)
+
                 this.patreons = resp['datos'].filter( p => p.proyectoId = 1 );
                 for ( let d of this.patreons){
                   this.acumulado += Number(d.amount)

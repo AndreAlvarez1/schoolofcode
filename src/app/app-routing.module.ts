@@ -4,11 +4,13 @@ import { ErrorComponent } from './components/error/error.component';
 import { ExitoComponent } from './components/exito/exito.component';
 import { HomeComponent } from './components/home/home.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { PagosComponent } from './components/pagos/pagos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'exito/:id', component: ExitoComponent},
   { path: 'error/:id', component: ErrorComponent},
+  { path: 'pagos', component: PagosComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home'},
 
 ];

@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 })
 export class ConectorService {
 
-    // public url = 'http://localhost:9092'; //DEV
-    public url = 'https://my-project-1514329660818.uc.r.appspot.com'
+    public url = 'http://localhost:9092'; //DEV
+    // public url = 'https://my-project-1514329660818.uc.r.appspot.com'
 
 
   constructor( private http:HttpClient,

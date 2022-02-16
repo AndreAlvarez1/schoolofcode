@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ExitoComponent } from './components/exito/exito.component';
 import { ErrorComponent } from './components/error/error.component';
+import { PagosComponent } from './components/pagos/pagos.component';
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ErrorComponent } from './components/error/error.component';
     AppComponent,
     HomeComponent,
     ExitoComponent,
-    ErrorComponent
+    ErrorComponent,
+    PagosComponent
   ],
   imports: [
     BrowserModule,
